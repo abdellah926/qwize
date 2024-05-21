@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image:url('https://th.bing.com/th/id/OIG1.MHnyEfLD8bAfvkJrBP1t?pid=ImgGn');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+   
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.logo {
+    float: left;
+    padding: 20px;
+
+}
+
+.logo img {
+    height: 60px; 
+    width: 60px;
+    border-radius: 50%;
+}
+
+.profile {
+    float: right;
+    padding: 10px;
+}
+
+.profile img {
+    height: 30px; 
+    width: auto;
+    border-radius: 10%;
+    text-align: center;
+     
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title a{
+    text-decoration: none;
+    color: rgb(0, 0, 0) ;
+    font-size: 50px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+    float: center;
+    color: white;
+    padding: 10px;
+ 
+    font-size: 50px;
+    text-align: center;
+    padding-top: 20px;
+    transition: transform 0.5s;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    top: 30px;
+    left: 100px;
+    right: 100px;
+    width:664px;
+    background-color: black;
+   animation: mymove 5s;
+   cursor: pointer;
+   background: transparent;
+}
+.title:hover{
+  
+    transform: translateY(-5px);
+}
+
+
+
+@keyframes mymove {
+  from {top: 0px;}
+  to {top: 200px;}
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+ padding-top: 140px;
+   
+
+}
+
+
+.quiz-container{
+    padding: 20px 80px;
+    background-color: #ff0000;
+    border: 2px solide rgb(255, 255, 255);
+    outline: none;
+    border-radius: 8px;
+    box-shadow: 0 0 40px #cd4848;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+    cursor: pointer;   
+    transition: transform 0.5s;
+
+  
+
+}
+.question {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: red;
+    font-size: 30px;
+   background-color: black;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    position: relative;
+    top: -30px;
+    right: 32px;
+    width:664px;
+     transition: transform 0.5s;
+     cursor: pointer;
+     color: white;
+     border: 2px solide rgb(255, 0, 0);
+     outline: none;
+
+}
+
+#choices {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 10%;
+    
+
+    
+
+
+}
+
+.choice {
+    transition: transform 0.3s ease;
+     cursor: pointer;
+     border: 2px solide white;
+     outline: none;
+     border-radius: 8px;
+     letter-spacing: 1px;
+    box-shadow: #fff;
+     outline: none;
+     border-radius: 8px;
+     color: #000000;
+     box-shadow: 0 0 40px #ffffff;
+     font-size: 23px;
+     padding: 2px 20px;
+     width:0 120px;
+     background-color: black;
+     height: 80px;
+     color: #ff0000;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     margin: auto 20px;
+    }
+ 
+   
+.submit-btn {
+    background-color: #ff0019;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    margin-left: 43%;
+    margin-top: 50px;
+     transition: transform 0.5s;
+}
+
+.submit-btn:hover{
+    background-color: red;
+    transition: 0.8s;
+    transform: translateY(-10px);
+}
+.quiz-container:hover {
+    transform: translateY(-20px);
+  }
+  .question:hover {
+    transform: translateY(-12px);
+  }.choice:hover {
+    transform: scale(1.2);
+  }
+  .question a{
+      text-decoration: none;
+      color: red;
+  }
+   .scorecontainer{
+      right: 40px;
+       top: 40px;
+      display: flex;
+       justify-content: center;
+      align-items: center;
+      font-size: 14px;
+     font-weight: bold;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+     color: white;
+      background: #ff0000;
+     padding: 12px 15px;
+   
+    border-radius: 10px;
+    transition: transform 1s;
+    }
+     .scorecontainer a {
+    text-decoration: none;
+    color: white;
+   
+  }
+  .scorecontainer:hover{
+    transform: translateY(-5px);
+
+}
