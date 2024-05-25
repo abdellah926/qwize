@@ -108,14 +108,14 @@ let questionsdata=[
   
   let resultcontent = document.getElementById('result')
  // Math.floor(Math.random() * ?)
-    let currentquestion =Math.floor(Math.random() * 3) + 1;
+    let randomMath =Math.floor(Math.random() * 3) + 1;
     
     let score = 0
   //function of displaying the question and choices as buttons
 
     function  displayquestion() {
   
-   let currentquizdata= questionsdata[currentquestion];
+   let currentquizdata= questionsdata[randomMath];
   
    questioncontent.textContent =currentquizdata.question;
   
@@ -146,7 +146,7 @@ let questionsdata=[
   
    let selectedchoice = event.target.textContent;
   
-   let currentquizdata = questionsdata[currentquestion];
+   let currentquizdata = questionsdata[randomMath];
   
    if (selectedchoice == currentquizdata.correctAnswer) {
   
@@ -156,9 +156,9 @@ let questionsdata=[
   
    }
   
-   currentquestion++;
+   randomMath++;
   
-   if (currentquestion < questionsdata.length) {
+   if (randomMath < questionsdata.length) {
   
    displayquestion();
   
@@ -188,5 +188,7 @@ let questionsdata=[
   }
   
   }
-  
+
+  showResult();
+
    displayquestion();

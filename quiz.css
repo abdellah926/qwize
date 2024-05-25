@@ -1,3 +1,4 @@
+/*This is the website column where it talks about the fixed and non-repeated background and the padding are zero*/
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -5,6 +6,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
+/*It contains the logo, the large title, and the score*/
 
 nav {
    
@@ -68,17 +70,19 @@ nav {
    cursor: pointer;
    background: transparent;
 }
+/*/ this transform from titel move 5s /*/
 .title:hover{
   
     transform: translateY(-5px);
 }
 
-
+/*/ this methode keyframes {from,to} mymove/*/
 
 @keyframes mymove {
   from {top: 0px;}
   to {top: 200px;}
 }
+/*/{display,flex} for container*/
 .container{
     display: flex;
     align-items: center;
@@ -89,7 +93,7 @@ nav {
 
 }
 
-
+/*design for body-container and {movment}//*/
 .quiz-container{
     padding: 20px 80px;
     background-color: #ff0000;
@@ -103,7 +107,7 @@ nav {
     cursor: pointer;   
     transition: transform 0.5s;
 }
-
+/*this choice {display-flex}*/
 #choices {
     display: flex;
     align-items: center;
@@ -111,7 +115,7 @@ nav {
     padding: 20px;
     font-size: 10%;
 }
-
+/*transition from choice and design for choice button//*/
 .choice {
     transition: transform 0.3s ease;
      cursor: pointer;
@@ -133,16 +137,14 @@ nav {
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
      margin: auto 20px;
     }
-  
+/*thif for transform container,  choice*/
 .quiz-container:hover {
     transform: translateY(-20px);
   }
-  .question:hover {
-    transform: translateY(-12px);
-  }.choice:hover {
+  .choice:hover {
     transform: scale(1.2);
   }
-
+/*this scoer  design  for body*/
   .scorecontainer{
       right: 40px;
        top: 40px;
@@ -159,11 +161,13 @@ nav {
     border-radius: 10px;
     transition: transform 1s;
     }
-     .scorecontainer a {
+    /*and this fro [.scorecontainer],textdecoration,color/*/
+    .scorecontainer a {
     text-decoration: none;
     color: white;
    
   }
+  /*.scorecontainer:hover//*/
   .scorecontainer:hover{
     transform: translateY(-5px);
 
