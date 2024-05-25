@@ -52,7 +52,7 @@ nav {
     float: center;
     color: white;
     padding: 10px;
- 
+    
     font-size: 50px;
     text-align: center;
     padding-top: 20px;
@@ -102,28 +102,6 @@ nav {
     letter-spacing: 1px;
     cursor: pointer;   
     transition: transform 0.5s;
-
-  
-
-}
-.question {
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: red;
-    font-size: 30px;
-   background-color: black;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    position: relative;
-    top: -30px;
-    right: 32px;
-    width:664px;
-     transition: transform 0.5s;
-     cursor: pointer;
-     color: white;
-     border: 2px solide rgb(255, 0, 0);
-     outline: none;
-
 }
 
 #choices {
@@ -132,11 +110,6 @@ nav {
     justify-content: center;
     padding: 20px;
     font-size: 10%;
-    
-
-    
-
-
 }
 
 .choice {
@@ -160,26 +133,7 @@ nav {
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
      margin: auto 20px;
     }
- 
-   
-.submit-btn {
-    background-color: #ff0019;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    display: flex;
-    margin-left: 43%;
-    margin-top: 50px;
-     transition: transform 0.5s;
-}
-
-.submit-btn:hover{
-    background-color: red;
-    transition: 0.8s;
-    transform: translateY(-10px);
-}
+  
 .quiz-container:hover {
     transform: translateY(-20px);
   }
@@ -188,11 +142,8 @@ nav {
   }.choice:hover {
     transform: scale(1.2);
   }
-  .question a{
-      text-decoration: none;
-      color: red;
-  }
-   .scorecontainer{
+
+  .scorecontainer{
       right: 40px;
        top: 40px;
       display: flex;
