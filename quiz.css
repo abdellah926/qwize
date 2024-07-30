@@ -11,19 +11,21 @@ body {
 nav {
    
     overflow: hidden;
-    background-color: #ffffff;
+    background-color: #000000;
 }
 
 .logo {
     float: left;
     padding: 20px;
-
+    filter: drop-shadow(5px 2px 6px rgb(255, 0, 0));
 }
 
 .logo img {
     height: 60px; 
     width: 60px;
     border-radius: 50%;
+    border: 4px solid black;
+
 }
 
 .profile {
@@ -45,16 +47,15 @@ nav {
 }
 .title a{
     text-decoration: none;
-    color: rgb(0, 0, 0) ;
+    color: rgb(255, 102, 0) ;
     font-size: 50px;
    font-family: Arial, Helvetica, sans-serif;
 }
 
 .title {
     float: center;
-    color: white;
+    color: rgb(255, 47, 0);
     padding: 10px;
-    
     font-size: 50px;
     text-align: center;
     padding-top: 20px;
@@ -100,12 +101,21 @@ nav {
     border: 2px solide rgb(255, 255, 255);
     outline: none;
     border-radius: 8px;
-    box-shadow: 0 0 40px #cd4848;
-    font-size: 20px;
-    color: rgb(0, 0, 0);
+   font-size: 20px;
+    color: rgb(255, 255, 255);
     letter-spacing: 1px;
     cursor: pointer;   
     transition: transform 0.5s;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 2px solid white;
+   box-shadow: 0 0 30px #ff0051, 
+    0 0 10px rgba(255, 0, 55, 0.599), 
+    0 0 100px #ff3a3a, 
+    0 0 500px #ff0000, 
+    5px 9px 5px rgba(0, 0, 0, 0.638);
+   
 }
 /*this choice {display-flex}*/
 #choices {
@@ -126,14 +136,14 @@ nav {
     box-shadow: #fff;
      outline: none;
      border-radius: 8px;
-     color: #000000;
-     box-shadow: 0 0 40px #ffffff;
+     color: #ffffff;
+     box-shadow: 0 0 40px #fffefe;
      font-size: 23px;
      padding: 2px 20px;
      width:0 120px;
-     background-color: black;
+     background-color: rgb(255, 255, 255);
      height: 80px;
-     color: #ff0000;
+     color: #000000;
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
      margin: auto 20px;
     }
@@ -154,9 +164,10 @@ nav {
       font-size: 14px;
      font-weight: bold;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
-     color: white;
-      background: #ff0000;
+     color: rgb(255, 55, 0);
+      background: #000000;
      padding: 12px 15px;
+     border: 2px solid white;
    
     border-radius: 10px;
     transition: transform 1s;
@@ -172,3 +183,12 @@ nav {
     transform: translateY(-5px);
 
 }
+.background-video{
+    position: fixed; 
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;      
+    background-size: cover;
+    }
